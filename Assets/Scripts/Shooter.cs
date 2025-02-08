@@ -62,7 +62,7 @@ public class Shooter : MonoBehaviour
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
             if(rb != null)
             {
-                rb.velocity = transform.up * projectileSpeed;
+                rb.linearVelocity = transform.up * projectileSpeed;
             }
 
             Destroy(instance, projectileLifetime);
